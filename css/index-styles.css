@@ -113,6 +113,7 @@ section {
     margin: 2.5%;
     background: #9A00EB;
     padding: 20px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, font-size 0.3s ease;
 }
