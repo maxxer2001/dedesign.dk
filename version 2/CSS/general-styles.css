@@ -1,9 +1,11 @@
+/* Resetting styles */
 body {
     background-color: black;
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 header {
     display: flex;
     flex-direction: row;
@@ -13,16 +15,16 @@ header {
 
 .burger-menu {
     cursor: pointer;
-    z-index: 10; /* Ensure the burger menu is above other elements */
+    z-index: 10;
 }
 
 .dropdown-menu {
-    display: none; /* Initially hide the dropdown menu */
+    display: none;
     cursor: pointer;
     position: absolute;
-    top: 0px; /* Adjust based on your layout */
-    left: 0; /* Adjust based on your layout */
-    z-index: 500; /* Ensure it's below the burger menu */
+    top: 0px;
+    left: 0;
+    z-index: 500;
     background-color: rgb(217, 0, 255);
     width: 200px;
     height: auto;
@@ -34,15 +36,15 @@ header {
 .dropdown-menu ul {
     display: flex;
     flex-direction: column;
-    list-style-type: none; /* Remove bullets */
+    list-style-type: none;
     margin-top: 60px;
     margin-left: -20px;
     gap: 2em;
 }
 
 .dropdown-menu ul li a {
-    color: white; /* Set text color to white */
-    text-decoration: none; /* Remove default underline */
+    color: white;
+    text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -51,3 +53,5 @@ header {
     border-radius: 12px;
     padding: 5px;
 }
+
+/* Main */
