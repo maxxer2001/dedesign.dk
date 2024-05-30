@@ -10,3 +10,37 @@ header {
     width: 100vw;
     height: auto;
 }
+
+.burger-menu {
+    cursor: pointer;
+    z-index: 10; /* Ensure the burger menu is above other elements */
+}
+
+.dropdown-menu {
+    display: none; /* Initially hide the dropdown menu */
+    cursor: pointer;
+    position: absolute;
+    top: 0px; /* Adjust based on your layout */
+    left: 0; /* Adjust based on your layout */
+    z-index: 500; /* Ensure it's below the burger menu */
+    background-color: rgb(217, 0, 255);
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none; /* Remove bullets */
+    margin-top: 60px;
+    margin-left: -20px;
+    gap: 2em;
+}
+
+.dropdown-menu ul li a {
+    color: white; /* Set text color to white */
+    text-decoration: none; /* Remove default underline */
+}
