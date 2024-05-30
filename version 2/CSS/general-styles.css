@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+}
