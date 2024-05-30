@@ -43,4 +43,11 @@ header {
 .dropdown-menu ul li a {
     color: white; /* Set text color to white */
     text-decoration: none; /* Remove default underline */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: rgb(195, 0, 255);
+    border-radius: 12px;
+    padding: 5px;
 }
