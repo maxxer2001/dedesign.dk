@@ -1,7 +1,18 @@
 window.onload = function() {
     var isLoggedIn = localStorage.getItem('isLoggedIn');
+    var storedPassword = localStorage.getItem('password');
 
-    if (!isLoggedIn) {
+    if (!isLoggedIn || !storedPassword) {
+        // User is not logged in or password is not set, show login form
+        showLoginForm();
+    } else {
+        // Password is set, prompt for login only if not already logged in
+        if (!isLoggedIn) {
+            showLoginForm();
+        }
+    }
+
+    function showLoginForm() {
         // Hide header, main, and footer
         var header = document.querySelector('header');
         var main = document.querySelector('main');
@@ -51,9 +62,10 @@ window.onload = function() {
 
         loginButton.onclick = function() {
             var enteredPassword = passwordInput.value.trim();
-            var correctPassword = "kea";
+            var hashedEnteredPassword = hashPassword(enteredPassword);
+            var correctPassword = localStorage.getItem('password');
 
-            if (enteredPassword === correctPassword) {
+            if (hashedEnteredPassword === correctPassword) {
                 // Store login status
                 localStorage.setItem('isLoggedIn', 'true');
 
@@ -75,4 +87,39 @@ window.onload = function() {
 
         document.body.appendChild(loginContainer);
     }
+
+    function hashPassword(password) {
+        // Implement your password hashing algorithm here
+        // For demonstration, you can use a simple hashing function
+        // This is not secure for production use, consider using a proper hashing library
+        var hash = 0;
+        if (password.length == 0) {
+            return hash;
+        }
+        for (var i = 0; i < password.length; i++) {
+            var char = password.charCodeAt(i);
+            hash = ((hash << 5) - hash) + char;
+            hash = hash & hash; // Convert to 32bit integer
+        }
+        return hash.toString();
+    }
+
+    // Function to change the password directly in JavaScript code
+    function changePassword(newPassword) {
+        // Hash the new password
+        var hashedNewPassword = hashPassword(newPassword);
+        // Store the new hashed password in localStorage
+        localStorage.setItem('password', hashedNewPassword);
+    }
+
+    // Example usage of changePassword function
+    changePassword('Minomino2');
 };
+
+function logout() {
+    // Clear the stored login status from localStorage
+    localStorage.removeItem('isLoggedIn');
+    // Redirect or perform any other action after logout if needed
+    // For example:
+    // window.location.href = 'login.html';
+}
