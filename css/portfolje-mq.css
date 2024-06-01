@@ -1,0 +1,11 @@
+@media (min-width: 700px) {
+    main {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .project {
+        flex: 0 0 auto;
+    }
+}
