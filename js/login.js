@@ -99,7 +99,7 @@ window.onload = function() {
         localStorage.setItem('password', hashedNewPassword);
     }
 
-    changePassword('Minomino2');
+    changePassword('kea');
 };
 
 function logout() {
