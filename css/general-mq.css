@@ -1,0 +1,13 @@
+@media (min-width: 700px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .nav-logo {
+    display: none;
+  }
+}

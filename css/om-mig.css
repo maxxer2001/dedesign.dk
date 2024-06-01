@@ -1,0 +1,20 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  border-radius: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

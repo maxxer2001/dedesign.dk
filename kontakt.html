@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/general-mq.css">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <title>Projekt</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="burger-menu" class="burger-menu" onclick="toggleMenu()">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <dotlottie-player
+          src="https://lottie.host/1fa0ffab-2d74-4545-ab71-0f2577686d5b/KC7Qa5R3gB.json"
+          background="transparent"
+          speed="1"
+          style="width: 50px; height: 50px"
+          direction="1"
+          playMode="normal"
+          loop
+          hover
+        >
+        </dotlottie-player>
+      </div>
+      <div id="dropdown" class="dropdown">
+        <ul>
+            <li><a href="index.html">Forsiden</a></li>
+            <li><a href="om-mig.html">Om mig</a></li>
+            <li><a href="portfolje.html">Portfolje</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+      </div>
+      <div id="nav-links" class="nav-links">
+        <ul>
+            <li><a href="index.html">Forsiden</a></li>
+            <li><a href="om-mig.html">Om mig</a></li>
+            <li><a href="portfolje.html">Portfolje</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+      <div class="nav-logo" id="nav-logo">
+        <img src="svg/dedesign.dk.svg" alt="logo" />
+      </div>
+      <div class="nav-fav" id="nav-fav">
+        <img src="svg/logo.svg" alt="fav" />
+      </div>
+    </header>
+    <main>
+        <div class="contact-container">
+            <h1>Kontakt</h1>
+            <div class="contact-info">
+                <p><strong>Navn:</strong> Massimo Dede</p>
+                <p><strong>Telefon nummer:</strong> <a href="tel:+4593923291">+45 93923291</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@dedesign.dk">info@dedesign.dk</a></p>
+            </div>
+            <form id="contact-form">
+                <label for="name">Dit Navn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Din Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Din Besked:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
