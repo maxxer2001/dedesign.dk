@@ -1,0 +1,30 @@
+/* Media Queries */
+@media (min-width: 750px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .links {
+        display: block;
+        margin-right: 1em;
+    }
+
+    .links ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        list-style-type: none
+    };
+
+    .links ul li {
+        list-style-type: none !important;
+    }
+
+    .links ul li a {
+        text-decoration: none !important;
+    }
+
+    .links ul li a:hover {
+        text-decoration: underline;
+    }
+}

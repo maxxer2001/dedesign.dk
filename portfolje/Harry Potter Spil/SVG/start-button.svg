@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1092.85 492.27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #047b00;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #000;
+        font-family: ComicSansMS, 'Comic Sans MS';
+        font-size: 150px;
+      }
+    </style>
+  </defs>
+  <g id="Lag_1-2" data-name="Lag 1">
+    <path class="cls-1" d="M298.26,48.12C182.17,91.97-13.16,202.85,1.26,305.12c20.17,143.1,448.99,255.31,793,137,35.23-12.12,303.88-104.51,298-217-7.37-141.07-446.19-308.37-794-177Z"/>
+    <text class="cls-2" transform="translate(404.13 291.53)"><tspan x="0" y="0">Spil</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lag_2" data-name="Lag 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: Apple-Chancery, 'Apple Chancery';
+        font-size: 243.98px;
+      }
+    </style>
+  </defs>
+  <g id="Lag_1-2" data-name="Lag 1">
+    <g>
+      <rect class="cls-1" x=".5" y=".5" width="1919" height="1079"/>
+      <path class="cls-1" d="M1919,1v1078H1V1h1918M1920,0H0v1080h1920V0h0Z"/>
+    </g>
+    <text class="cls-2" transform="translate(412.54 606.69)"><tspan x="0" y="0">Game Over</tspan></text>
+  </g>
+</svg>

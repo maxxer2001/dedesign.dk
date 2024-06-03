@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/general-styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="../website/spil.html">Spillet</a></li>
+      <li><a href="../website/grafik.html">Grafik</a></li>
+      <li><a href="../website/assets.html">Assets</a></li>
+      <li><a href="../website/teknik.html">Teknik</a></li>
+    </ul>
+    <img src="SVG/hp-logo.svg" alt="hp-logo" />
+  </header>
+  <main>
+    <div id="screen">
+      <div id="game">
+        <div id="game-container">
+          <div id="background"></div>
+          <div id="icons_container">
+            <div id="snake_container">
+              <div id="snake_svg"></div>
+            </div>
+            <div id="dumbledore_container">
+              <div id="dumbledore_svg"></div>
+            </div>
+            <div id="dumbledore2_container">
+              <div id="dumbledore2_svg"></div>
+            </div>
+            <div id="snape_container">
+              <div id="snape_svg"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="lives-container">
+          <div id="lives"></div>
+          <div id="heart1"></div>
+          <div id="heart2"></div>
+          <div id="heart3"></div>
+        </div>
+        <br>
+        <div id="timer"></div>
+        <div id="score">
+          <div id="points">0</div>
+        </div>
+
+        <div id="gameover">
+          <img onclick="reStartGame()" src="SVG/start-button.svg" alt="" id="reStart_button" />
+        </div>
+        <div id="start_screen">
+          <img src="SVG/start-button.svg" alt="" id="start_button" />
+        </div>
+        <div id="game_won"></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h3>&copy; 2024 - Massimo Dede</h3>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mq.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <style>
+    .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+  </style>
+  <title>RundtOmVerden - Forsiden</title>
+</head>
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="img/Rundtomverden.svg" alt="logo" />
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="index.html">Forsiden</a></li>
+        <li><a href="om-os.html">Om os</a></li>
+        <li><a href="tilbud.html">Tilbud</a></li>
+        <li><a href="sociale-medier.html">Sociale medier</a></li>
+      </ul>
+    </div>
+    <div class="kontakt-os-button">
+      <button><a href="kontakt.html">Kontakt os!</a></button>
+    </div>
+    <div class="burger-menu">
+      <img class="burger-menu-img" src="img/burger-menu.svg" alt="burger-menu" onclick="toggleMenu()" />
+    </div>
+  </header>
+  <div class="mobile-menu">
+    <div style="width: 100%; height: 100%; background: linear-gradient(180deg, #FF0000 0%, #AD00FF 100%); border-radius: 43px">
+      <ul>
+        <li><a href="index.html">Forsiden</a></li>
+        <li><a href="om-os.html">Om os</a></li>
+        <li><a href="tilbud.html">Tilbud</a></li>
+        <li><a href="sociale-medier.html">Sociale medier</a></li>
+        <li><a href="kontakt.html">Kontakt os</a></li>
+      </ul>
+    </div>
+  </div>
+  <main>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+  </main>
+  <footer>
+    <div class="footer-container">
+      <img src="img/footer.svg" alt="footer">
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

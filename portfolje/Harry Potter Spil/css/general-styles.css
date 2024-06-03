@@ -1,0 +1,354 @@
+/* Resetting styles */
+body {
+  margin: 0;
+  padding: 0;
+} 
+
+/* Header styles */
+header {
+  background-color: rgb(163, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+}
+
+header ul li {
+  margin-right: 2em;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header img {
+  max-width: 80px;
+}
+
+/* Screen styles */
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  container-type: inline-size;
+}
+
+#game {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 0, 0);
+  overflow: hidden;
+}
+
+#background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 0, 0);
+  background-image: url("../SVG/background.svg");
+  background-size: cover;
+  z-index: -1;
+}
+
+#start_screen {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background-image: url(../SVG/start-screen.svg);
+  height: 100%;
+  background-repeat: none;
+  background-size: cover;
+
+}
+
+/* Icons / Characters */
+#icons_container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#dumbledore_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 6/4;
+}
+
+#dumbledore2_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 6/4;
+}
+
+#snake_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 22/10;
+}
+
+#snape_container {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 6/4;
+}
+
+#snake_svg,
+#snape_svg,
+#dumbledore_svg,
+#dumbledore2_svg {
+  max-width: 100px;
+}
+
+#snake_svg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../SVG/snake.svg);
+  background-size: cover;
+}
+
+#dumbledore_svg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../SVG/dumbledore.svg);
+  background-size: cover;
+}
+#dumbledore2_svg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../SVG/dumbledore.svg);
+  background-size: cover;
+}
+
+#snape_svg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../SVG/snape.svg);
+  background-size: cover;
+}
+
+/* Timer */
+#timer {
+  height: 50px;
+  width: 50px;
+}
+
+/* start button */
+#start_button {
+  height: 100px;
+  width: 100px;
+  /* z-index: 999; */
+}
+#reStart_button{
+  height: 100px;
+  width: 100px;
+}
+/* Game over */
+#gameover {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-image: url(../SVG/game-over.svg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hidden { 
+  display: none;
+}
+
+#heart1,
+#heart2,
+#heart3 {
+  position: absolute;
+  top: 40%;
+  height: 3.5vh;
+  background-image: url(../SVG/heart.svg);
+  width: 2vw;
+  background-size: cover;
+  background-repeat: none;
+  margin: 0 1em;
+}
+
+#heart1 {
+  left: 2.5%;
+}
+
+#heart2 {
+  left: 5%;
+}
+
+#heart3 {
+  left: 1;
+}
+
+.droppos1 {
+  top: -30%;
+  left: 10%;
+}
+
+.droppos2 {
+  top: -30%;
+  left: 22%;
+}
+
+.droppos3 {
+  top: -30%;
+  left: 38%;
+}
+
+.droppos4 {
+  top: -30%;
+  left: 63%;
+}
+
+.droppos5 {
+  top: -30%;
+  left: 80%;
+}
+.pos1 {
+  top: 6%;
+  left: 0%;
+}
+.pos2 {
+  top: 22%;
+  left: 19%;
+}
+.pos3 {
+  top: 9%;
+  left: 33%;
+}
+.pos4 {
+  top: 3%;
+  left: 77%;
+}
+.pos5 {
+  top: 60%;
+  left: 69%;
+}
+
+.delay1 {
+  animation-delay: 0s;
+}
+.delay2 {
+  animation-delay: 1s;
+}
+.delay3 {
+  animation-delay: 2s;
+}
+
+.speed1 {
+  animation-duration: 1s;
+}
+.speed2 {
+  animation-duration: 2s;
+}
+
+.speed3{
+  animation-duration: 3s;
+}
+.speed4{
+  animation-duration: 0.5s;
+}
+.drop {
+  animation: drop 4s infinite linear;
+}
+
+/* @keyframes drop {
+  from {
+    translate: 0 0;
+  }
+  to {
+    translate: 0 600%;
+  }
+} */
+
+@keyframes drop {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+.stop {
+  animation-play-state: paused;
+}
+
+.disappear {
+    animation: disappear 2s 1 both;
+  }
+  
+  @keyframes disappear {
+    from {
+      opacity: 1;
+      rotate: 0deg;
+      scale: 1;
+    }
+    to {
+      opacity: 0;
+      rotate: 720deg;
+      scale: 0;
+    }
+  }
+
+
+
+  .fake {
+    display: none;
+  }
+
+
+
+  #game-container {
+    position: relative;
+    width: 80%;
+    max-width: 900px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.452);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#lives-container {
+  /* display: flex; */
+  /* flex-direction: row; */
+  position: absolute;
+  /* z-index: 1000; */
+  left: 0;
+  top: 30%;
+  width: 1000px;
+  height: 100px;
+}
+
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(163, 0, 0);
+  color: white;
+  font-weight: bold;
+}
