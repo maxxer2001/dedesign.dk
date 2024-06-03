@@ -1,8 +1,10 @@
 @media (min-width: 700px) {
     main {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
+        display: grid;
+        /* grid-area: ; */
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        /* overflow-x: auto; */
     }
 
     .project {

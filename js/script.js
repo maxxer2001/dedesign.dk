@@ -55,3 +55,8 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       alert('Please fill in all fields.');
   }
 });
+
+function goToGoogle() {
+  var url = "https://www.google.dk/";
+  window.location.href = url;
+}
