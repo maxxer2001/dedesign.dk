@@ -1,0 +1,29 @@
+@media (min-width: 700px) {
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .container:first-child {
+        flex: 0 0 auto;
+        max-width: 300px;
+        margin-right: 20px;
+    }
+
+    .container img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container:not(:first-child) {
+        flex: 1;
+        max-width: calc(50% - 20px); /* Adjust as needed for your layout */
+        /* Subtracting 20px (padding) from 50% to prevent overflow */
+    }
+}
