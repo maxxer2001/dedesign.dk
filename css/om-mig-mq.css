@@ -23,7 +23,6 @@
 
     .container:not(:first-child) {
         flex: 1;
-        max-width: calc(50% - 20px); /* Adjust as needed for your layout */
-        /* Subtracting 20px (padding) from 50% to prevent overflow */
+        max-width: calc(50% - 20px);
     }
 }
